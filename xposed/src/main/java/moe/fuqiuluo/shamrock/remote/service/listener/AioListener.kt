@@ -32,7 +32,7 @@ import android.os.BatteryManager
 import android.content.Intent
 import mqq.app.MobileQQ
 import android.content.IntentFilter
-
+import android.os.Build
 internal object AioListener : IKernelMsgListener {
     override fun onRecvMsg(msgList: ArrayList<MsgRecord>) {
         if (msgList.isEmpty()) return
